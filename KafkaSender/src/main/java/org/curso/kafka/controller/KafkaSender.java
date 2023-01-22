@@ -11,12 +11,9 @@ import org.apache.kafka.common.header.internals.RecordHeaders;
 import org.curso.kafka.service.KafkaService;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
-import org.springframework.format.annotation.DateTimeFormat;
 import org.springframework.web.bind.annotation.*;
 
 import java.nio.charset.StandardCharsets;
-import java.time.LocalDate;
-import java.util.ArrayList;
 import java.util.Date;
 import java.util.Map;
 
