@@ -1,4 +1,4 @@
-FROM ubuntu:20.04
+FROM ubuntu:22.10
 
 RUN apt-get update && apt-get -y upgrade
 
@@ -39,20 +39,20 @@ RUN tar xvf zeppelin-0.10.1-bin-all.tgz
 RUN mv zeppelin-0.10.1-bin-all zeppelin/
 
 
-RUN wget https://raw.githubusercontent.com/LuisRomera/zeppe/main/conf/shiro.ini
+RUN wget https://raw.githubusercontent.com/LuisRomera/CursoKafka/main/docker/zeppelin/conf/shiro.ini
 RUN mv shiro.ini /zeppelin/conf/shiro.ini
 
-RUN wget https://raw.githubusercontent.com/LuisRomera/zeppe/main/conf/zeppelin-site.xml
+RUN wget https://raw.githubusercontent.com/LuisRomera/CursoKafka/main/docker/zeppelin/conf/zeppelin-site.xml
 RUN mv zeppelin-site.xml /zeppelin/conf/zeppelin-site.xml
 
-RUN wget https://raw.githubusercontent.com/LuisRomera/zeppe/main/interpreter/python/interpreter-setting.json
+RUN wget https://raw.githubusercontent.com/LuisRomera/CursoKafka/main/docker/zeppelin/interpreter/python/interpreter-setting.json
 RUN mv interpreter-setting.json /zeppelin/interpreter/python/interpreter-setting.json
 
 
-RUN wget https://raw.githubusercontent.com/LuisRomera/zeppe/main/notebook/java_2HNRCXEXV.zpln
+RUN wget https://raw.githubusercontent.com/LuisRomera/CursoKafka/main/docker/zeppelin/notebook/java_2HNRCXEXV.zpln
 RUN mv java_2HNRCXEXV.zpln /zeppelin/notebook/java_2HNRCXEXV.zpln
 
-RUN wget https://raw.githubusercontent.com/LuisRomera/zeppe/main/conf/interpreter.json
+RUN wget https://raw.githubusercontent.com/LuisRomera/CursoKafka/main/docker/zeppelin/conf/interpreter.json
 RUN mv interpreter.json /zeppelin/conf/interpreter.json
 
 
