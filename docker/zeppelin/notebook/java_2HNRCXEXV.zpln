@@ -1,0 +1,117 @@
+{
+  "paragraphs": [
+    {
+      "text": "%java\nimport java.util.HashMap;\nimport java.util.Map;\nimport org.apache.zeppelin.java.JavaInterpreterUtils;\n\npublic class HelloWorld {\n\n    public static void main(String[] args) {\n\n        Map<String, Long> counts = new HashMap<>();\n        counts.put(\"hello\",4L);\n        counts.put(\"world\",5L);\n\n        System.out.println(JavaInterpreterUtils.displayTableFromSimpleMap(\"Word\",\"Count\", counts));\n\n    }\n}\n",
+      "user": "admin",
+      "dateUpdated": "2023-01-06T23:11:39+0000",
+      "progress": 0,
+      "config": {
+        "editorSetting": {
+          "language": "java",
+          "editOnDblClick": false
+        },
+        "colWidth": 12,
+        "editorMode": "ace/mode/java",
+        "fontSize": 9,
+        "results": {
+          "0": {
+            "graph": {
+              "mode": "table",
+              "height": 300,
+              "optionOpen": false,
+              "setting": {
+                "table": {
+                  "tableGridState": {},
+                  "tableColumnTypeState": {
+                    "names": {
+                      "Word": "string",
+                      "Count": "string"
+                    },
+                    "updated": false
+                  },
+                  "tableOptionSpecHash": "[{\"name\":\"useFilter\",\"valueType\":\"boolean\",\"defaultValue\":false,\"widget\":\"checkbox\",\"description\":\"Enable filter for columns\"},{\"name\":\"showPagination\",\"valueType\":\"boolean\",\"defaultValue\":false,\"widget\":\"checkbox\",\"description\":\"Enable pagination for better navigation\"},{\"name\":\"showAggregationFooter\",\"valueType\":\"boolean\",\"defaultValue\":false,\"widget\":\"checkbox\",\"description\":\"Enable a footer for displaying aggregated values\"}]",
+                  "tableOptionValue": {
+                    "useFilter": false,
+                    "showPagination": false,
+                    "showAggregationFooter": false
+                  },
+                  "updated": false,
+                  "initialized": false
+                }
+              },
+              "commonSetting": {}
+            }
+          }
+        },
+        "enabled": true
+      },
+      "settings": {
+        "params": {},
+        "forms": {}
+      },
+      "results": {
+        "code": "SUCCESS",
+        "msg": [
+          {
+            "type": "TABLE",
+            "data": "Word\tCount\nworld\t5\nhello\t4\n"
+          }
+        ]
+      },
+      "apps": [],
+      "runtimeInfos": {},
+      "progressUpdateIntervalMs": 500,
+      "jobName": "paragraph_1673046650995_1272675519",
+      "id": "paragraph_1673046650995_1272675519",
+      "dateCreated": "2023-01-06T23:10:50+0000",
+      "dateStarted": "2023-01-06T23:11:38+0000",
+      "dateFinished": "2023-01-06T23:11:39+0000",
+      "status": "FINISHED",
+      "focus": true,
+      "$$hashKey": "object:2082"
+    },
+    {
+      "text": "%java\n",
+      "user": "admin",
+      "dateUpdated": "2023-01-06T23:11:23+0000",
+      "progress": 0,
+      "config": {
+        "colWidth": 12,
+        "fontSize": 9,
+        "enabled": true,
+        "results": {},
+        "editorSetting": {
+          "language": "java",
+          "editOnDblClick": false
+        },
+        "editorMode": "ace/mode/java"
+      },
+      "settings": {
+        "params": {},
+        "forms": {}
+      },
+      "apps": [],
+      "runtimeInfos": {},
+      "progressUpdateIntervalMs": 500,
+      "jobName": "paragraph_1673046683458_636176715",
+      "id": "paragraph_1673046683458_636176715",
+      "dateCreated": "2023-01-06T23:11:23+0000",
+      "status": "READY",
+      "$$hashKey": "object:2083"
+    }
+  ],
+  "name": "java",
+  "id": "2HNRCXEXV",
+  "defaultInterpreterGroup": "java",
+  "version": "0.10.1",
+  "noteParams": {},
+  "noteForms": {},
+  "angularObjects": {},
+  "config": {
+    "isZeppelinNotebookCronEnable": false,
+    "looknfeel": "default",
+    "personalizedMode": "false"
+  },
+  "info": {},
+  "path": "/java"
+}
